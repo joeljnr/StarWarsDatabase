@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FF4E363DF60B192A526EEAC /* Pods_StarWarsDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBD3FA8C5FA7C4A0DBB4C8D /* Pods_StarWarsDatabase.framework */; };
+		57A5B1AEBECBBC51E827A52D /* Pods_StarWarsDatabaseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A3530E7116E630FEAE81F51 /* Pods_StarWarsDatabaseTests.framework */; };
+		7A2396F577326A654363BA44 /* Pods_StarWarsDatabase_StarWarsDatabaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C73B7D63497AC89677DC7A /* Pods_StarWarsDatabase_StarWarsDatabaseUITests.framework */; };
 		EC22C2A123BF80CE00CA762F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C2A023BF80CE00CA762F /* AppDelegate.swift */; };
 		EC22C2A323BF80CE00CA762F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C2A223BF80CE00CA762F /* SceneDelegate.swift */; };
 		EC22C2A523BF80CE00CA762F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C2A423BF80CE00CA762F /* ContentView.swift */; };
@@ -15,6 +18,15 @@
 		EC22C2AD23BF80CF00CA762F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC22C2AB23BF80CF00CA762F /* LaunchScreen.storyboard */; };
 		EC22C2B823BF80CF00CA762F /* StarWarsDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C2B723BF80CF00CA762F /* StarWarsDatabaseTests.swift */; };
 		EC22C2C323BF80CF00CA762F /* StarWarsDatabaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C2C223BF80CF00CA762F /* StarWarsDatabaseUITests.swift */; };
+		EC22C2D123BF80F300CA762F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C2D023BF80F300CA762F /* MainTabBarController.swift */; };
+		EC22C2D523BF81CB00CA762F /* ClassExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C2D423BF81CB00CA762F /* ClassExtensions.swift */; };
+		EC22C2D723BF82F900CA762F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC22C2D623BF82F900CA762F /* Utils.swift */; };
+		EC2BB77D23BFEB3100DDBECE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2BB77C23BFEB3100DDBECE /* TableViewCell.swift */; };
+		EC2BB78023BFEC7700DDBECE /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = EC2BB77F23BFEC7700DDBECE /* Fonts */; };
+		EC2BB78323BFF1B300DDBECE /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2BB78223BFF1B300DDBECE /* Character.swift */; };
+		ECE873C723BFE556001367F0 /* CharactersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE873C623BFE556001367F0 /* CharactersVC.swift */; };
+		ECE873C923BFE57D001367F0 /* PlanetsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE873C823BFE57D001367F0 /* PlanetsVC.swift */; };
+		ECE873CB23BFE597001367F0 /* MoviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE873CA23BFE597001367F0 /* MoviesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3530E7116E630FEAE81F51 /* Pods_StarWarsDatabaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarWarsDatabaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14D514B81DC471060E2558C3 /* Pods-StarWarsDatabaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsDatabaseTests.release.xcconfig"; path = "Target Support Files/Pods-StarWarsDatabaseTests/Pods-StarWarsDatabaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		3C4EB0B945AA3426E8EC3752 /* Pods-StarWarsDatabase-StarWarsDatabaseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsDatabase-StarWarsDatabaseUITests.release.xcconfig"; path = "Target Support Files/Pods-StarWarsDatabase-StarWarsDatabaseUITests/Pods-StarWarsDatabase-StarWarsDatabaseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		47B1DA2F6C30A1AD4AC364C7 /* Pods-StarWarsDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsDatabase.debug.xcconfig"; path = "Target Support Files/Pods-StarWarsDatabase/Pods-StarWarsDatabase.debug.xcconfig"; sourceTree = "<group>"; };
+		4EBFD4FA2B6F0F1BDD3ACAE7 /* Pods-StarWarsDatabase-StarWarsDatabaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsDatabase-StarWarsDatabaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-StarWarsDatabase-StarWarsDatabaseUITests/Pods-StarWarsDatabase-StarWarsDatabaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		57CC40DCC6C881D00269084B /* Pods-StarWarsDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsDatabase.release.xcconfig"; path = "Target Support Files/Pods-StarWarsDatabase/Pods-StarWarsDatabase.release.xcconfig"; sourceTree = "<group>"; };
+		58C73B7D63497AC89677DC7A /* Pods_StarWarsDatabase_StarWarsDatabaseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarWarsDatabase_StarWarsDatabaseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C53E62BCCD77BE51784844B /* Pods-StarWarsDatabaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsDatabaseTests.debug.xcconfig"; path = "Target Support Files/Pods-StarWarsDatabaseTests/Pods-StarWarsDatabaseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC22C29D23BF80CE00CA762F /* StarWarsDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC22C2A023BF80CE00CA762F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC22C2A223BF80CE00CA762F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,16 @@
 		EC22C2BE23BF80CF00CA762F /* StarWarsDatabaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StarWarsDatabaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC22C2C223BF80CF00CA762F /* StarWarsDatabaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsDatabaseUITests.swift; sourceTree = "<group>"; };
 		EC22C2C423BF80CF00CA762F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC22C2D023BF80F300CA762F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		EC22C2D423BF81CB00CA762F /* ClassExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassExtensions.swift; sourceTree = "<group>"; };
+		EC22C2D623BF82F900CA762F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		EC2BB77C23BFEB3100DDBECE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EC2BB77F23BFEC7700DDBECE /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		EC2BB78223BFF1B300DDBECE /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		ECE873C623BFE556001367F0 /* CharactersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersVC.swift; sourceTree = "<group>"; };
+		ECE873C823BFE57D001367F0 /* PlanetsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsVC.swift; sourceTree = "<group>"; };
+		ECE873CA23BFE597001367F0 /* MoviesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVC.swift; sourceTree = "<group>"; };
+		FBBD3FA8C5FA7C4A0DBB4C8D /* Pods_StarWarsDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarWarsDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF4E363DF60B192A526EEAC /* Pods_StarWarsDatabase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57A5B1AEBECBBC51E827A52D /* Pods_StarWarsDatabaseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +102,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2396F577326A654363BA44 /* Pods_StarWarsDatabase_StarWarsDatabaseUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB7A7FB6A3C4CFA9B537ACB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBBD3FA8C5FA7C4A0DBB4C8D /* Pods_StarWarsDatabase.framework */,
+				58C73B7D63497AC89677DC7A /* Pods_StarWarsDatabase_StarWarsDatabaseUITests.framework */,
+				0A3530E7116E630FEAE81F51 /* Pods_StarWarsDatabaseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC22C29423BF80CE00CA762F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +126,8 @@
 				EC22C2B623BF80CF00CA762F /* StarWarsDatabaseTests */,
 				EC22C2C123BF80CF00CA762F /* StarWarsDatabaseUITests */,
 				EC22C29E23BF80CE00CA762F /* Products */,
+				FA3097B0B70835B1FB1A3A1B /* Pods */,
+				BB7A7FB6A3C4CFA9B537ACB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +147,11 @@
 				EC22C2A023BF80CE00CA762F /* AppDelegate.swift */,
 				EC22C2A223BF80CE00CA762F /* SceneDelegate.swift */,
 				EC22C2A423BF80CE00CA762F /* ContentView.swift */,
+				EC2BB77F23BFEC7700DDBECE /* Fonts */,
+				EC22C2D323BF81B800CA762F /* Utility */,
+				EC2BB78123BFF17000DDBECE /* Models */,
+				EC2BB77B23BFEAF300DDBECE /* Views */,
+				EC22C2D223BF815900CA762F /* Controllers */,
 				EC22C2A623BF80CF00CA762F /* Assets.xcassets */,
 				EC22C2AB23BF80CF00CA762F /* LaunchScreen.storyboard */,
 				EC22C2AE23BF80CF00CA762F /* Info.plist */,
@@ -136,6 +186,55 @@
 			path = StarWarsDatabaseUITests;
 			sourceTree = "<group>";
 		};
+		EC22C2D223BF815900CA762F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC22C2D023BF80F300CA762F /* MainTabBarController.swift */,
+				ECE873C623BFE556001367F0 /* CharactersVC.swift */,
+				ECE873C823BFE57D001367F0 /* PlanetsVC.swift */,
+				ECE873CA23BFE597001367F0 /* MoviesVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC22C2D323BF81B800CA762F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EC22C2D423BF81CB00CA762F /* ClassExtensions.swift */,
+				EC22C2D623BF82F900CA762F /* Utils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		EC2BB77B23BFEAF300DDBECE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EC2BB77C23BFEB3100DDBECE /* TableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EC2BB78123BFF17000DDBECE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC2BB78223BFF1B300DDBECE /* Character.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA3097B0B70835B1FB1A3A1B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47B1DA2F6C30A1AD4AC364C7 /* Pods-StarWarsDatabase.debug.xcconfig */,
+				57CC40DCC6C881D00269084B /* Pods-StarWarsDatabase.release.xcconfig */,
+				4EBFD4FA2B6F0F1BDD3ACAE7 /* Pods-StarWarsDatabase-StarWarsDatabaseUITests.debug.xcconfig */,
+				3C4EB0B945AA3426E8EC3752 /* Pods-StarWarsDatabase-StarWarsDatabaseUITests.release.xcconfig */,
+				6C53E62BCCD77BE51784844B /* Pods-StarWarsDatabaseTests.debug.xcconfig */,
+				14D514B81DC471060E2558C3 /* Pods-StarWarsDatabaseTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +242,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC22C2C723BF80CF00CA762F /* Build configuration list for PBXNativeTarget "StarWarsDatabase" */;
 			buildPhases = (
+				EF49B088ADFB22212EF8497F /* [CP] Check Pods Manifest.lock */,
 				EC22C29923BF80CE00CA762F /* Sources */,
 				EC22C29A23BF80CE00CA762F /* Frameworks */,
 				EC22C29B23BF80CE00CA762F /* Resources */,
+				AF240F66A5B251062B0575DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +261,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC22C2CA23BF80CF00CA762F /* Build configuration list for PBXNativeTarget "StarWarsDatabaseTests" */;
 			buildPhases = (
+				E5C7ABC7EF4C47EDC615CA18 /* [CP] Check Pods Manifest.lock */,
 				EC22C2AF23BF80CF00CA762F /* Sources */,
 				EC22C2B023BF80CF00CA762F /* Frameworks */,
 				EC22C2B123BF80CF00CA762F /* Resources */,
@@ -178,9 +280,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC22C2CD23BF80CF00CA762F /* Build configuration list for PBXNativeTarget "StarWarsDatabaseUITests" */;
 			buildPhases = (
+				EACBA4214F547F6E095DC86D /* [CP] Check Pods Manifest.lock */,
 				EC22C2BA23BF80CF00CA762F /* Sources */,
 				EC22C2BB23BF80CF00CA762F /* Frameworks */,
 				EC22C2BC23BF80CF00CA762F /* Resources */,
+				64835CF7F7AE65F674219134 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -243,6 +347,7 @@
 				EC22C2AD23BF80CF00CA762F /* LaunchScreen.storyboard in Resources */,
 				EC22C2AA23BF80CF00CA762F /* Preview Assets.xcassets in Resources */,
 				EC22C2A723BF80CF00CA762F /* Assets.xcassets in Resources */,
+				EC2BB78023BFEC7700DDBECE /* Fonts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,14 +367,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64835CF7F7AE65F674219134 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarWarsDatabase-StarWarsDatabaseUITests/Pods-StarWarsDatabase-StarWarsDatabaseUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarWarsDatabase-StarWarsDatabaseUITests/Pods-StarWarsDatabase-StarWarsDatabaseUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StarWarsDatabase-StarWarsDatabaseUITests/Pods-StarWarsDatabase-StarWarsDatabaseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF240F66A5B251062B0575DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarWarsDatabase/Pods-StarWarsDatabase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StarWarsDatabase/Pods-StarWarsDatabase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StarWarsDatabase/Pods-StarWarsDatabase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5C7ABC7EF4C47EDC615CA18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarWarsDatabaseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EACBA4214F547F6E095DC86D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarWarsDatabase-StarWarsDatabaseUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF49B088ADFB22212EF8497F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StarWarsDatabase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC22C29923BF80CE00CA762F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE873C723BFE556001367F0 /* CharactersVC.swift in Sources */,
+				EC22C2D723BF82F900CA762F /* Utils.swift in Sources */,
+				EC2BB78323BFF1B300DDBECE /* Character.swift in Sources */,
+				ECE873CB23BFE597001367F0 /* MoviesVC.swift in Sources */,
+				EC22C2D523BF81CB00CA762F /* ClassExtensions.swift in Sources */,
 				EC22C2A123BF80CE00CA762F /* AppDelegate.swift in Sources */,
+				EC2BB77D23BFEB3100DDBECE /* TableViewCell.swift in Sources */,
+				ECE873C923BFE57D001367F0 /* PlanetsVC.swift in Sources */,
 				EC22C2A323BF80CE00CA762F /* SceneDelegate.swift in Sources */,
 				EC22C2A523BF80CE00CA762F /* ContentView.swift in Sources */,
+				EC22C2D123BF80F300CA762F /* MainTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +648,7 @@
 		};
 		EC22C2C823BF80CF00CA762F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47B1DA2F6C30A1AD4AC364C7 /* Pods-StarWarsDatabase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +669,7 @@
 		};
 		EC22C2C923BF80CF00CA762F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57CC40DCC6C881D00269084B /* Pods-StarWarsDatabase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +690,7 @@
 		};
 		EC22C2CB23BF80CF00CA762F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C53E62BCCD77BE51784844B /* Pods-StarWarsDatabaseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +713,7 @@
 		};
 		EC22C2CC23BF80CF00CA762F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14D514B81DC471060E2558C3 /* Pods-StarWarsDatabaseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +736,7 @@
 		};
 		EC22C2CE23BF80CF00CA762F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EBFD4FA2B6F0F1BDD3ACAE7 /* Pods-StarWarsDatabase-StarWarsDatabaseUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +757,7 @@
 		};
 		EC22C2CF23BF80CF00CA762F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C4EB0B945AA3426E8EC3752 /* Pods-StarWarsDatabase-StarWarsDatabaseUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
