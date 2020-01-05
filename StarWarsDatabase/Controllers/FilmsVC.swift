@@ -9,11 +9,11 @@
 import UIKit
 import Alamofire
 
-class PlanetsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FilmsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    var planets = Planets()
+    var films = Films()
     
     let tableView: UITableView = {
         let table = UITableView()
@@ -25,7 +25,7 @@ class PlanetsViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     lazy var refreshControl: UIRefreshControl = {
         let refreshControl = UIRefreshControl()
-        refreshControl.addTarget(self, action: #selector(PlanetsViewController.handleRefresh(_:)), for: UIControl.Event.valueChanged)
+        refreshControl.addTarget(self, action: #selector(FilmsViewController.handleRefresh(_:)), for: UIControl.Event.valueChanged)
         refreshControl.tintColor = UIColor(rgb: Colors.yellow)
         return refreshControl
     }()
@@ -38,7 +38,7 @@ class PlanetsViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
         view.backgroundColor = .white
         navigationController?.navigationBar.isTranslucent = false
-        navigationItem.title = "Planets"
+        navigationItem.title = "Films"
         
         tableView.register(TableViewCell.self, forCellReuseIdentifier: "Cell")
 
@@ -50,16 +50,18 @@ class PlanetsViewController: UIViewController, UITableViewDelegate, UITableViewD
         activityIndicator.hidesWhenStopped = true
         
         setupViews()
-                
+        
+        activityIndicator.startAnimating()
+        
         startLoading()
-        getPlanets {
+        getFilms {
             self.finishLoading()
             self.tableView.reloadData()
         }
     }
     
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
-        getPlanets {
+        getFilms {
             self.tableView.reloadData()
             self.refreshControl.endRefreshing()
         }
@@ -76,14 +78,14 @@ class PlanetsViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return planets.results.count
+        return films.results.count
     }
        
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! TableViewCell
         
-        if indexPath.row < planets.results.count {
-            cell.setCell(info: planets.results[indexPath.row].name)
+        if indexPath.row < films.results.count {
+            cell.setCell(info: films.results[indexPath.row].title)
         }
         return cell
     }
@@ -105,15 +107,15 @@ class PlanetsViewController: UIViewController, UITableViewDelegate, UITableViewD
         view.addConstraintsWithFormat(format: "V:|[v0]|", views: tableView)
     }
     
-    func getPlanets(completion: @escaping () -> Void) {
-        let url = appDelegate.apiUrl + "planets"
+    func getFilms(completion: @escaping () -> Void) {
+        let url = appDelegate.apiUrl + "films"
         
         AF.request(url, method: .get).responseJSON { (response) in
             switch response.result {
             case .success:
                 do {
                     let jsonDecoder = JSONDecoder()
-                    try self.planets = jsonDecoder.decode(Planets.self, from: response.data!)
+                    try self.films = jsonDecoder.decode(Films.self, from: response.data!)
                     completion()
                 } catch {
                     let alert = UIAlertController(title: "Error!", message: "Something went wrong with the data", preferredStyle: .alert)

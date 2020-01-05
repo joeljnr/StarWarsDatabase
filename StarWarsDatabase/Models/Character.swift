@@ -8,6 +8,13 @@
 
 import Foundation
 
+struct Characters: Decodable {
+    var count: Int = 0
+    var next: String? = ""
+    var previous: String? = ""
+    var results: [Character] = [Character]()
+}
+
 struct Character: Decodable {
     var name: String = ""
     var height: String = ""
@@ -21,7 +28,7 @@ struct Character: Decodable {
     var created: String = ""
     var edited: String = ""
     var url: String = ""
-    var filmes: [String] = [String]()
+    var films: [String] = [String]()
     var species: [String] = [String]()
     var vehicles: [String] = [String]()
     var starships: [String] = [String]()

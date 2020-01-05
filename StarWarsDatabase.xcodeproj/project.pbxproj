@@ -24,9 +24,11 @@
 		EC2BB77D23BFEB3100DDBECE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2BB77C23BFEB3100DDBECE /* TableViewCell.swift */; };
 		EC2BB78023BFEC7700DDBECE /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = EC2BB77F23BFEC7700DDBECE /* Fonts */; };
 		EC2BB78323BFF1B300DDBECE /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2BB78223BFF1B300DDBECE /* Character.swift */; };
+		ECA215AE23C170920025276C /* Planets.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA215AD23C170920025276C /* Planets.swift */; };
+		ECA215B023C1750E0025276C /* FIlms.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA215AF23C1750E0025276C /* FIlms.swift */; };
 		ECE873C723BFE556001367F0 /* CharactersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE873C623BFE556001367F0 /* CharactersVC.swift */; };
 		ECE873C923BFE57D001367F0 /* PlanetsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE873C823BFE57D001367F0 /* PlanetsVC.swift */; };
-		ECE873CB23BFE597001367F0 /* MoviesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE873CA23BFE597001367F0 /* MoviesVC.swift */; };
+		ECE873CB23BFE597001367F0 /* FilmsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE873CA23BFE597001367F0 /* FilmsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,9 +77,11 @@
 		EC2BB77C23BFEB3100DDBECE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		EC2BB77F23BFEC7700DDBECE /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		EC2BB78223BFF1B300DDBECE /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		ECA215AD23C170920025276C /* Planets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planets.swift; sourceTree = "<group>"; };
+		ECA215AF23C1750E0025276C /* FIlms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIlms.swift; sourceTree = "<group>"; };
 		ECE873C623BFE556001367F0 /* CharactersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersVC.swift; sourceTree = "<group>"; };
 		ECE873C823BFE57D001367F0 /* PlanetsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsVC.swift; sourceTree = "<group>"; };
-		ECE873CA23BFE597001367F0 /* MoviesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesVC.swift; sourceTree = "<group>"; };
+		ECE873CA23BFE597001367F0 /* FilmsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsVC.swift; sourceTree = "<group>"; };
 		FBBD3FA8C5FA7C4A0DBB4C8D /* Pods_StarWarsDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StarWarsDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -192,7 +196,7 @@
 				EC22C2D023BF80F300CA762F /* MainTabBarController.swift */,
 				ECE873C623BFE556001367F0 /* CharactersVC.swift */,
 				ECE873C823BFE57D001367F0 /* PlanetsVC.swift */,
-				ECE873CA23BFE597001367F0 /* MoviesVC.swift */,
+				ECE873CA23BFE597001367F0 /* FilmsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -218,6 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				EC2BB78223BFF1B300DDBECE /* Character.swift */,
+				ECA215AD23C170920025276C /* Planets.swift */,
+				ECA215AF23C1750E0025276C /* FIlms.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -478,14 +484,16 @@
 				ECE873C723BFE556001367F0 /* CharactersVC.swift in Sources */,
 				EC22C2D723BF82F900CA762F /* Utils.swift in Sources */,
 				EC2BB78323BFF1B300DDBECE /* Character.swift in Sources */,
-				ECE873CB23BFE597001367F0 /* MoviesVC.swift in Sources */,
+				ECE873CB23BFE597001367F0 /* FilmsVC.swift in Sources */,
 				EC22C2D523BF81CB00CA762F /* ClassExtensions.swift in Sources */,
 				EC22C2A123BF80CE00CA762F /* AppDelegate.swift in Sources */,
 				EC2BB77D23BFEB3100DDBECE /* TableViewCell.swift in Sources */,
 				ECE873C923BFE57D001367F0 /* PlanetsVC.swift in Sources */,
 				EC22C2A323BF80CE00CA762F /* SceneDelegate.swift in Sources */,
 				EC22C2A523BF80CE00CA762F /* ContentView.swift in Sources */,
+				ECA215B023C1750E0025276C /* FIlms.swift in Sources */,
 				EC22C2D123BF80F300CA762F /* MainTabBarController.swift in Sources */,
+				ECA215AE23C170920025276C /* Planets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

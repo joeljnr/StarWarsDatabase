@@ -12,15 +12,19 @@ class MainTabBarController: UITabBarController {
 
     let charVC = UINavigationController(rootViewController: CharactersViewController())
     let planetsVC = UINavigationController(rootViewController: PlanetsViewController())
-    let moviesVC = UINavigationController(rootViewController: MoviesViewController())
+    let moviesVC = UINavigationController(rootViewController: FilmsViewController())
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        
-        charVC.tabBarItem = UITabBarItem(title: "Characters", image: nil, selectedImage: nil)
-        planetsVC.tabBarItem = UITabBarItem(title: "Planets", image: nil, selectedImage: nil)
-        moviesVC.tabBarItem = UITabBarItem(title: "Movies", image: nil, selectedImage: nil)
+
+        charVC.tabBarItem = UITabBarItem(title: "Characters", image: UIImage(named: "user"), selectedImage: UIImage(named: "user"))
+        planetsVC.tabBarItem = UITabBarItem(title: "Planets", image: UIImage(named: "globe"), selectedImage: UIImage(named: "globe"))
+        moviesVC.tabBarItem = UITabBarItem(title: "Films", image: UIImage(named: "film"), selectedImage: UIImage(named: "film"))
         
         viewControllers = [charVC, planetsVC, moviesVC]
         
